@@ -20,9 +20,7 @@ export class CommitsComponent implements OnInit {
   }
 
   public getCommitsData(){
-    this.commitsData$ = this.commitsService.getByOwnerAndRepo('jogaec22','manage-commits').pipe(
-      tap( data => console.log(data))
-    )
+    this.commitsData$ = this.commitsService.getByOwnerAndRepo('jogaec22','manage-commits');
   }
 
 }
