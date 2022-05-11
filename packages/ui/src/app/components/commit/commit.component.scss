@@ -1,0 +1,29 @@
+.container-commit {
+    background-color: orange;    
+    margin-bottom: 1em;
+    padding: .5em 1em;
+    border-radius: 25px;
+    width: 60%;
+}
+.container-commit:hover {
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+}
+.detail-commit{
+    width: 55%;
+    margin-left: 20px;
+}
+.label {
+    font-weight: bold;
+}
+
+.value {
+    background-color: black;
+    color: white;
+    padding: .5em 1em;
+
+    a{
+        color: white;
+    }
+}

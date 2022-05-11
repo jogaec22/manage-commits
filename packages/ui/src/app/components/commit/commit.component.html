@@ -1,0 +1,21 @@
+<div class="container-commit" (click)="collapseCommit()">
+    <strong>SHA:</strong> {{commit.sha}}
+</div>
+
+<ng-container *ngIf="toggleCollapseCommit">
+    <div class="detail-commit">
+        <p class="label"> Message: </p>        
+        <p class="value"> {{commit.message}} </p>
+
+        <p class="label"> Html Url: </p>        
+        <p class="value"> <a target="_blank" href="{{commit.htmlUrl}}">{{commit.htmlUrl}}</a></p>
+
+        <p class="label"> Author: </p>        
+        <div class="value">
+            <p> <strong>Name:</strong> {{commit.author.name}}</p>
+            <p> <strong>Email:</strong> {{commit.author.email}}</p>
+            <p> <strong>date:</strong> {{commit.author.date}}</p>
+            <img [src]="commit.author.avatarUrl" alt="avatar">
+        </div>
+    </div>    
+</ng-container>

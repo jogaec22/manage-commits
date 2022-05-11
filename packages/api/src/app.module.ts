@@ -1,11 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ManageApiModule } from './manage-api/manage-api.module';
-import { ManageUiModule } from './manage-ui/manage-ui.module';
+import { GithubApiModule } from './github-api/github-api.module';
 
 @Module({
-  imports: [ManageApiModule, ManageUiModule],
+  imports: [GithubApiModule],
   controllers: [AppController],
   providers: [AppService],
 })
